@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 4.0//RU">
+<html>
+<head>
+<meta HTTP-EQUIV="content-type" CONTENT="text/html; charset=Windows-1251">
+<title>Лаб. 4. Шагаев С. Б.</title>
+</head> 
+<body>
+<script language="JavaScript">  
+<!--	
+function money(obj) 
+{ 
+var a = obj.st1.value;
+var b = obj.st2.value;
+var c = obj.st3.value;
+var d = obj.st4.value;
+var e = obj.st5.value;
+var f = obj.st6.value;
+	
+if( (Number(a)<0) || (isNaN(a) == true) ) alert("Введено недопустимое значение зарплаты в январе!"); 
+else if( (Number(b)<0) || (isNaN(b) == true) ) alert("Введено недопустимое значение зарплаты в феврале!"); 
+else if( (Number(c)<0) || (isNaN(c) == true) ) alert("Введено недопустимое значение зарплаты в марте!"); 
+else if( (Number(d)<0) || (isNaN(d) == true) ) alert("Введено недопустимое значение зарплаты в апреле!"); 
+else if( (Number(e)<0) || (isNaN(e) == true) ) alert("Введено недопустимое значение зарплаты в мае!"); 
+else if( (Number(f)<0) || (isNaN(f) == true) ) alert("Введено недопустимое значение зарплаты в июне!"); 
+else 
+{
+var s=(Number(a) + Number(b) + Number(c) + Number(d) + Number(e) + Number(f))/6;
+obj.res.value=s
+}
+}
+
+</script>
+<p>Введите начисленную зарплату за следующие месяцы:</p>
+<FORM name="form1"> 
+<p>Январь: <input type="text" size=7 name="st1" required placeholder="0">
+<p>Февраль: <input type="text" size=7 name="st2" required placeholder="0">
+<p>Март: <input type="text" size=7 name="st3" required placeholder="0">
+<p>Апрель: <input type="text" size=7 name="st4" required placeholder="0">
+<p>Май: <input type="text" size=7 name="st5" required placeholder="0">
+<p>Июнь: <input type="text" size=7 name="st6" required placeholder="0">
+<p>Средняя зарплата: <input type="text" size=7 name="res">
+<p><input type="button" value="Bычиcлить"
+onClick="money(form1)">
+<INPUT TYPE="RESET" VALUE="Обновить">
+</FORM>
+
+</body>
+</html>

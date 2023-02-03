@@ -1,0 +1,41 @@
+body {background-image: URL(images/sky.gif)}
+
+P {text-align: justify; text-indent: 2em}
+
+h2 {color: #333399; font-style: italic; font-family: Arial}
+
+h3 {color: #333399; text-align:center; font-family: Arial}
+
+ul {list-style-image: url(images/paw.gif)}
+
+#head {background-image: URL(images/ris.gif); width: 600px; height: 450px; margin-top: 25px; margin-bottom: 25px; margin-left: auto; margin-right: auto}
+
+#menu {float: right; width: 300px; margin-top: 25px; margin-bottom: 15px; margin-left: 15px; margin-right: 15px; font-weight: bold; font-family: Arial; font-style: italic; font-size: 12pt}
+
+#menu p {text-align: left; text-indent: -17px}
+
+#main {margin-left: auto; margin-right: auto; width: 800px}
+
+.t1 {margin-left: 10pt; color: #000080; font-size: 30pt; font-weight: bold; font-family: Arial}
+
+.t2 {margin-top: -35pt; margin-left: 8pt; color: #6699CC; font-size: 30pt; font-weight: bold; font-family: Arial}
+
+.r {float: right; margin-top: 15px; margin-bottom: 15px; margin-left: 80%}
+
+ul a:link {color: #333366; text-decoration: none}
+
+ul a:active  {color: #FFCC99; text-decoration: none}
+
+ul a:visited {color: #660066; text-decoration: none}
+
+ul a:hover {color: #E7AD00; text-decoration: underline}
+
+.r a:link {font-family: Arial; font-style: italic; color: blue; text-decoration: none}
+
+.r a:active  {font-family: Arial; font-style: italic; color: #6699FF; text-decoration: none}
+
+.r a:visited {font-family: Arial; font-style: italic; color: navy; text-decoration: none}
+
+.r a:hover {font-family: Arial; font-style: italic; font-weight: bold; color: #6699FF; text-decoration: underline}
+
+p a:hover {color: #E7AD00; text-decoration: underline}

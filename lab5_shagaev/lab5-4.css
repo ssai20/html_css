@@ -1,0 +1,13 @@
+body {background-color: white; color: gray; font-family: Arial, sans-serif}
+h3 {color: white; background-color: navy; padding: 10px}
+h4 {color: navy}
+.wrap {width: 800px}
+.item {overflow: hidden; padding-top: 20px; border-top: 1px solid silver;}
+.name {position: relative; float: left; width: 50%}
+.price {position: relative; float: right; text-align: right; width: 50%}
+.img {position: relative; float: left; width: 100px; height: 100px; padding: 10px; font-style: italic; text-align: center}
+.img a {text-decoration: none;}
+.img a:hover {text-decoration: underline; color: gray}
+.img a:active {text-decoration: none; color: gray}
+.img a:visited {text-decoration: none; color: gray}
+.content {position: relative; float: left}

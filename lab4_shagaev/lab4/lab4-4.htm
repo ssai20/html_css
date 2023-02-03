@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 4.0//RU">
+<html>
+<head>
+<meta HTTP-EQUIV="content-type" CONTENT="text/html; charset=Windows-1251">
+<title>Лаб. 4. Шагаев С. Б.</title>
+</head> 
+<body>
+<script language="JavaScript">  
+<!--	
+function print(obj) 
+{ 
+switch (obj.CONTROL1.value)
+{
+case "ru": document.write("<p><span style='color:" + obj.CONTROL2.value + " '>Здравствуйте!</span>"); break; 
+case "en": document.write("<p><span style='color:" + obj.CONTROL2.value + " '>Hello!</span>"); break; 
+case "fr": document.write("<p><span style='color:" + obj.CONTROL2.value + " '>Bonjour!</span>"); break; 
+case "de": document.write("<p><span style='color:" + obj.CONTROL2.value + " '>Guten Tag!</span>"); break; 
+default: document.write("<p>Выбран неправильный язык!") 
+}}
+
+</script>
+	
+<FORM name="form1">
+<P>Выберете язык
+<BR>
+<INPUT TYPE="RADIO" NAME="CONTROL1" VALUE="ru" CHECKED>русский
+<BR>
+<INPUT TYPE="RADIO" NAME="CONTROL1" VALUE="en">английский
+<BR>
+<INPUT TYPE="RADIO" NAME="CONTROL1" VALUE="fr">французский
+<BR>
+<INPUT TYPE="RADIO" NAME="CONTROL1" VALUE="de">немецкий
+<BR>
+<P>Выберете цвет
+<BR>
+<INPUT TYPE="RADIO" NAME="CONTROL2" VALUE="aqua" CHECKED>aqua
+<BR>
+<INPUT TYPE="RADIO" NAME="CONTROL2" VALUE="blue">blue
+<BR>
+<INPUT TYPE="RADIO" NAME="CONTROL2" VALUE="yellow">yellow
+<BR>
+<INPUT TYPE="RADIO" NAME="CONTROL2" VALUE="red">red
+<BR>
+<INPUT TYPE="RADIO" NAME="CONTROL2" VALUE="green">green
+
+<p><input type="button" value="Показать"
+onClick="print(form1)">
+<INPUT TYPE="RESET" VALUE="Отменить">
+</FORM>
+
+</body>
+</html>

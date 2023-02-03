@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 4.0//RU">
+<html>
+<head>
+<meta HTTP-EQUIV="content-type" CONTENT="text/html; charset=Windows-1251">
+<title>Лаб. 5. Шагаев С. Б.</title>
+<link rel="stylesheet" href="lab05-4.css">
+</head> 
+
+<body>
+
+		<script>
+			var ris = ["ar13", "null", "el15", "el16", "null", "sa18"]
+			var model = ["Ariston MW 212", "Ariston MWO 323 IX", "Electrolux EMS 2390", "Electrolux EMM 1900", "Samsung CE1190R", "Samsung C106R"]
+
+			function openRis(poz) 
+			{
+				if (ris[poz] == 'null') 
+				{
+					var html = `<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 4.0//RU">
+								
+								<head>
+								<meta HTTP-EQUIV="content-type" CONTENT="text/html; charset=Windows-1251">
+								<title>${model[poz]}</title>
+								<link rel="stylesheet" href="lab05-4.css">
+								</head>
+								
+								<body>
+								Для этой модели фотографии нет!
+								</body>
+								</html>`
+				}
+       				else
+				{
+					var html = `<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 4.0//RU">
+								
+								<head>
+								<meta HTTP-EQUIV="content-type" CONTENT="text/html; charset=Windows-1251">
+								<title>${model[poz]}</title>
+								<link rel="stylesheet" href="lab05-4.css">
+								</head>
+
+								<body>
+								<img src="photo/${ris[poz]}-b.jpg"
+								</body>
+								</html>`
+				} 
+				
+				
+				var wnd = window.open("about:blank", "", "width=400,height=300,location=no,menubar=no,toolbar=no,scrollbars=no");
+				wnd.document.write(html);
+				wnd.moveTo(250, 350)
+			}
+		</script>
+
+<div class="wrap">
+    <h3>Микроволновые печи</h3>
+
+		<div class="item">
+				<div class="name"><h4>Ariston MW 212</h4></div>
+				<span class="price"><h4>Цена: 8267,34</h4></span>
+				<div class="img"><a href="#" title="Посмотреть большое фото" onclick="openRis(0)"><img src="photo/ar13.jpg"/></a></div>
+				<div class="content">
+					Цвет: чёрный, белый<br>
+					Гриль: есть<br>
+					Управление: механическое<br>
+					Объем камеры: 23 л<br>
+					Конвекция: нет
+				</div>
+		</div>
+
+		<div class="item">
+				<div class="name"><h4>Ariston MWO 323 IX</h4></div>
+				<span class="price"><h4>Цена: 11675,00</h4></span>
+				<div class="img"><a href="#" title="Посмотреть большое фото" onclick="openRis(1)">Изображения нет</a></div>
+				<div class="content">
+					Цвет: нержавеющая сталь<br>
+					Гриль: есть<br>
+					Управление: электронное<br>
+					Объем камеры: 30 л<br>
+					Конвекция: есть
+				</div>
+		</div>
+
+
+		<div class="item">
+				<div class="name"><h4>Electrolux EMS 2390</h4></div>
+				<span class="price"><h4>Цена: 6197,00</h4></span>
+				<div class="img"><a href="#" title="Посмотреть большое фото" onclick="openRis(2)"><img src="photo/el15.jpg"/></a></div>
+				<div class="content">
+					Цвет: серебристый, белый<br>
+					Гриль: есть<br>
+					Управление: электронное<br>
+					Объем камеры: 23 л<br>
+					Конвекция: нет
+				</div>
+		</div>
+
+
+		<div class="item">
+					<div class="name"><h4>Electrolux EMM 1900</h4></div>
+					<span class="price"><h4>Цена: 2185,38</h4></span>
+					<div class="img"><a href="#" title="Посмотреть большое фото" onclick="openRis(3)"><img src="photo/el16.jpg"/></a></div>
+					<div class="content">
+						Цвет: серебристый<br>
+						Гриль: нет<br>
+						Управление: механическое<br>
+						Объем камеры: 19 л<br>
+						Конвекция: нет<br>
+					</div>
+		</div>
+
+
+		<div class="item">
+					<div class="name"><h4>Samsung CE1190R</h4></div>
+					<span class="price"><h4>Цена: 6290,00</h4></span>
+					<div class="img"><a href="#" title="Посмотреть большое фото" onclick="openRis(4)">Изображения нет</a></div>
+					<div class="content">
+						Цвет: нержавеющая сталь<br>
+						Гриль: есть<br>
+						Управление: тактовое<br>
+						Объем камеры: 32 л<br>
+						Конвекция: есть
+					</div>
+		</div>
+
+
+		<div class="item">
+					<div class="name"><h4>Samsung C106R</h4></div>
+					<span class="price"><h4>Цена: 6206,00</h4></span>
+					<div class="img"><a href="#" title="Посмотреть большое фото" onclick="openRis(5)"><img src="photo/sa18.jpg"/></a></div>
+					<div class="content">
+						Цвет: белый<br>
+						Гриль: есть<br>
+						Управление: сенсорное<br>
+						Объем камеры: 28 л<br>
+						Конвекция: есть
+					</div>
+		</div>
+
+</div>
+
+
+</body>
+</html>

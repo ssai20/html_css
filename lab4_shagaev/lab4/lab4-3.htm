@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 4.0//RU">
+<html>
+<head>
+<meta HTTP-EQUIV="content-type" CONTENT="text/html; charset=Windows-1251">
+<title>Лаб. 4. Шагаев С. Б.</title>
+<link href="lab04-3.css" rel="stylesheet" type="text/css"/>
+</head> 
+
+<body>
+<script language="JavaScript">  
+<!--	
+var k;
+var i;
+do
+{
+var l=prompt("Введите число k (от 2 до 9)");
+if( ((l>=2)&&(l<=9)) ) { k=l; i=0 } else { alert("Введено недопустимое значение k!"); i=1 }
+}
+while (i==1);
+	
+	
+var colors = new Array("white", "aqua", "blue", "yellow", "purple", "red", "lime", "teal", "silver");
+		var x; var y
+		
+document.write("<p>Ввели k=" + k + "<br>")
+		
+document.write("<table border=1 cellpadding=5>")
+for (var y=1; y<=30; y++)
+{
+document.write("<tr class=\"row\">");
+for (var x=1; x<=30; x++)
+{ 
+document.write("<td class=\"col\" style='background-color:" + colors[(x*y)%k] + " '>")
+document.write("<div class=\"t\">&nbsp;</div>");
+document.write("</td>");
+}
+document.write("</tr>")
+}
+document.write("</table>");
+</script>
+</body>
+</html>

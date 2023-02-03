@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 4.0//RU">
+<html>
+<head>
+<meta HTTP-EQUIV="content-type" CONTENT="text/html; charset=Windows-1251">
+<title>Лаб. 4. Шагаев С. Б.</title>
+</head> 
+<body>
+<script language="JavaScript">  
+<!--	
+var my_lang;
+var my_color;
+function greet(lang, color)
+{
+ switch (lang)
+{
+				case "ru": document.write("<p><span style='color:" + color + " '>Здравствуйте!</span>"); break; 
+				case "en": document.write("<p><span style='color:" + color + " '>Hello!</span>"); break; 
+				case "fr": document.write("<p><span style='color:" + color + " '>Bonjour!</span>"); break; 
+				case "de": document.write("<p><span style='color:" + color + " '>Guten Tag!</span>"); break; 
+				default: { alert("Выбран неправильный язык!"); return(1)} 
+}
+}
+	
+var k;
+do
+{	
+var _lang=prompt("Введите язык (ru, en, fr или de)");
+switch (_lang)
+{
+case "ru": {my_lang="ru"; k=1} break; 
+case "en": {my_lang="en"; k=1} break; 
+case "fr": {my_lang="fr"; k=1} break; 
+case "de": {my_lang="de"; k=1} break; 
+default: { alert("Выбран неправильный язык!"); k=0} 	
+}
+}
+while (k!=1);
+
+var l;
+do
+{	
+var _col=prompt("Введите название цвета");
+switch (_col)
+{
+case "": {alert("Введенa пустая строка!"); l=0}; break;	
+default: {my_color=_col; l=1}
+}
+}
+while (l!=1);
+
+greet(my_lang, my_color);
+	
+//-->
+</script>
+</body>
+</html>
+

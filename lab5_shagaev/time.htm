@@ -1,0 +1,23 @@
+   <HTML>
+<HEAD>
+
+<script language="JavaScript">
+var k = 1
+
+function ss()
+{	
+	var d = document
+	if (k <= 2){
+		if (k == 1) {d.mypict.src = "images/dgc.gif"; k++}
+		else if (k == 2) {d.mypict.src = "images/dgp.gif"; k=1}
+}		
+setTimeout("ss()", 1000)
+    	
+}
+</script>
+</HEAD>
+
+<body onLoad="ss()">
+<IMG src="images/dgp.gif" name=mypict width=10> 
+</body> 
+</HTML>

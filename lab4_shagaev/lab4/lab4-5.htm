@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 4.0//RU">
+<html>
+<head>
+<meta HTTP-EQUIV="content-type" CONTENT="text/html; charset=Windows-1251">
+<title>Лаб. 4. Шагаев С. Б.</title>
+</head> 
+<body>
+<h3>Горизонтальные линии</h3>
+<p>Выберите значения параметров, которые требуется изменить, и нажмите кнопку <b>Выполнить</b>.
+<script language="JavaScript">  
+<!--	
+
+function recipe(obj)
+{
+line.align="left";
+line.color="green";
+line.size=2;
+line.width=100;
+}
+
+
+function change(obj)
+{
+line.align=obj.a1.value;
+line.color=obj.color.value;
+
+if( (Number(obj.st1.value)<=0) || (isNaN(obj.st1.value) == true) ) alert("Введено недопустимое значение толщины линии!")
+else line.size=obj.st1.value;
+			
+if( (Number(obj.st2.value)<=0) || (isNaN(obj.st2.value) == true) ) alert("Введено недопустимое значение длины линии!")	
+else line.width=obj.st2.value;
+		
+}
+
+</script>
+<FORM name ="form2">
+<hr align="left" color="green" size="2px" width="100px" id="line">
+</FORM>	
+
+
+<br>
+
+<FORM name="form1">
+
+
+<table border=2>
+<tr>
+<td>
+				
+Выравнивание<br>
+<input type="radio" name="a1" value="left" CHECKED>LEFT<br> 
+<input type="radio" name="a1" value="center">CENTER<br> 
+<input type="radio" name="a1" value="right">RIGHT<br> 
+<input type="text" size=7 name="st1" VALUE="2">толщина линии (size)<br>
+<input type="text" size=7 name="st2" VALUE="100">длина линии (width)<br>
+</td>
+			
+<td>
+Цвет линии (color)<br>
+<select name=color size=1>
+<option value="green">green
+<option value="olive">olive
+<option value="navy">navy
+<option value="purlered">purlered
+<option value="teal">teal
+<option value="gray">gray
+<option value="silver">silver
+<option value="yellow">yellow
+<option value="blue">blue
+<option value="fuchsia">fuchsia
+<option value="white">white
+</select>
+				
+</td>
+</tr>
+</table>
+
+<input type="button" value="Выполнить"
+onClick="change(form1)"> 
+<input type="reset" value="Обновить"
+onClick="recipe(form1)"
+>
+
+	
+</FORM>
+
+</body>
+</html>

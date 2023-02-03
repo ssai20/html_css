@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 4.0//RU">
+<html>
+<head>
+<meta HTTP-EQUIV="content-type" CONTENT="text/html; charset=Windows-1251">
+<title>Лаб. 5. Шагаев С. Б. </title> 
+</head>
+<body onLoad="clockTick()">
+<style>
+img {margin-top: 0px; margin-left: 0px; margin-right: 0px; float: left}
+</style>
+<script>
+
+
+function setRis(number, instead) {
+var s = "images/dg" + number.toString() + ".gif";
+instead.src = s;
+}
+var k = 1
+function clockTick() {
+
+var t = new Date();
+var h = t.getHours();
+var m = t.getMinutes();
+var s = t.getSeconds();
+var h1 = Math.floor(h / 10);
+var h2 = h % 10;
+var m1 = Math.floor(m / 10);
+var m2 = m % 10;
+var s1 = Math.floor(s / 10);
+var s2 = s % 10;
+var a = [h1, h2, m1, m2, s1, s2];
+
+for (var i = 1; i < 7; i++) {
+setRis(a[i-1], document.getElementById(i.toString()))
+}
+var d = document
+if (k <= 2){
+if (k == 1) {d.mypict.src = "images/dgp.gif"; k++}
+else if (k == 2) {d.mypict.src = "images/dgn.gif"; k=1}
+}
+setTimeout(clockTick, 1000);
+}
+
+
+</script>
+
+<body>
+<img id="1" src="images/dg0.gif"/>
+<img id="2" src="images/dg0.gif"/>
+<img src="images/dgc.gif"/>
+<img id="3" src="images/dg0.gif"/>
+<img id="4" src="images/dg0.gif"/>
+<img src="images/dgp.gif"/ name=mypict>
+<img id="5" src="images/dg0.gif"/>
+<img id="6" src="images/dg0.gif"/>
+</body>
+
+
+
+</body>
+</html>
